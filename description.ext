@@ -1,0 +1,53 @@
+author="Olympus Entertainment";
+onLoadName = "Olympus CQC";
+onLoadMission = "A Close Quarters Combat game mode";
+overviewText = "A Close Quarters Combat game mode";
+overviewTextLocked = "A Close Quarters Combat game mode";
+overviewPicture = "loadscreen.jpg";
+loadScreen = "loadscreen.jpg";
+disableRandomization[] = {"All"};
+OnLoadIntroTime = 0;
+OnLoadMissionTime = 0;
+allowFunctionsLog = 1;
+allowFunctionsRecompile = 0;
+
+joinUnassigned = 1;
+disabledAI = 1;
+disableChannels[]={2};
+enableDebugConsole = 1;
+scriptedPlayer = 1;
+
+respawn = BASE;
+respawndelay = 1;
+reviveDelay = 10;
+reviveBleedOutDelay = 1500;
+respawnOnStart = -1;
+respawnTemplates[] = {"Revive","MenuPosition"};
+respawnDialog = 0;
+
+wreckManagerMode = 1;
+wreckLimit = 4;
+wreckRemovalMinTime = 20;
+wreckRemovalMaxTime = 40;
+corpseManagerMode = 1;
+corpseLimit = 8;
+corpseRemovalMinTime = 3;
+corpseRemovalMaxTime = 6;
+
+class Header {
+	gameType = Team;
+	minPlayers = 1;
+	maxPlayers = 40;
+};
+
+showHUD[] = {1,1,0,1,1,0,1,1};
+
+#include "dialog\MasterHandler.h"
+
+class CfgFunctions {
+	#include "Functions.h"
+};
+
+class CfgRemoteExec {
+	#include "CfgRE.hpp"
+};
