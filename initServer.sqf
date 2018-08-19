@@ -1,8 +1,9 @@
 /*
 	File: initServer.sqf
-	
+
 	Description:
 	Starts the initialization of the server. DESCRIPTIONEND
+  -- Gay mission
 */
 if(!(_this select 0)) exitWith {};//Not server
 
